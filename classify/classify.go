@@ -1,4 +1,4 @@
-package classifier
+package classify
 
 import (
 	"bufio"
@@ -15,8 +15,8 @@ import (
 )
 
 var (
-	graphFile  = "./model/tensorflow_inception_graph.pb"
-	labelsFile = "./model/imagenet_comp_graph_label_strings.txt"
+	graphFile  = "../model/tensorflow_inception_graph.pb"
+	labelsFile = "../model/imagenet_comp_graph_label_strings.txt"
 )
 
 // Label struct to get result.
@@ -112,7 +112,8 @@ func loadGraphLabels() (*tf.Graph, []string, error) {
 
 }
 
-func predict(url string) []Label {
+// Predict does the actual prediction
+func Predict(url string) []Label {
 
 	resp, err := http.Get(url)
 	if err != nil {
