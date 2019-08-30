@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"https://github.com/mss7082/ImgClassifier/classifier/"
+	"github.com/mss7082/ImgClassifier/classifier/"
 )
 
 func main() {
