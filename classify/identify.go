@@ -15,8 +15,8 @@ import (
 )
 
 var (
-	graphFile  = "../model/tensorflow_inception_graph.pb"
-	labelsFile = "../model/imagenet_comp_graph_label_strings.txt"
+	graphFile  = "./classify/model/tensorflow_inception_graph.pb"
+	labelsFile = "./classify/model/imagenet_comp_graph_label_strings.txt"
 )
 
 // Label struct to get result.
